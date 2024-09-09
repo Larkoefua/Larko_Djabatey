@@ -1,0 +1,67 @@
+/*  body{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(245,9,220,1) 50%, rgba(0,212,255,1) 100%);
+ }
+ here you can use the body or nav as a selector button*/
+/*this is an id created in the html file i,e  <div id="hero">{ */
+/* background-color: aquamarine; */
+/* background: rgb(2,0,36); */
+/* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(245,9,220,1) 50%, rgba(0,212,255,1) 100%); */
+/* font-size: 64pt;}  */
+/* button {  */
+/* font-size: 10pt; */
+/*buttons do not inherent from the parent} */
+/* .text_white { */
+/* color: white; }*/
+/* .text_bold { */
+/* font-weight: bold; } */
+/* ##################################################################################################################### */
+
+nav {
+   display: flex;
+   flex-direction: row;
+   /* main axis row and cross is c */
+   justify-content: space-around;
+   height: 71px;
+   align-items: center; 
+   background-color: #0779E4;
+   /* color: white; */
+}
+
+.nav_items {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   width: 70%; 
+   /* font-style: italic; */
+   
+ /* gap: 20%; */
+}
+
+.text_white{
+   color: white;
+}
+
+.hero{
+
+   background-image: url(../images/hero_bg.png);
+   height: 100vh;
+   /* background-position: center; */
+   background-size: cover;
+   padding-top: 120px;
+   
+}
+
+.tittle{
+
+   font-size: 60px;
+}
+
+sub_tittle{
+
+   font-size: 16px;
+}
+
+.hero_info{
+   width: 50%;
+padding-top: 48px;
+}
