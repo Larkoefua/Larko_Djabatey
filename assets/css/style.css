@@ -23,7 +23,7 @@ nav {
    justify-content: space-around;
    height: 71px;
    align-items: center; 
-   background-color: #0779E4;
+   background-color: #0779e444;
    /* color: white; */
 }
 
@@ -61,7 +61,7 @@ sub_tittle{
    font-size: 16px;
 }
 
-.hero_info{
+/* .hero_info{
    width: 50%;
 padding-top: 48px;
-}
+} */

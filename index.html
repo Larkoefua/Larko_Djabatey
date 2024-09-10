@@ -9,7 +9,9 @@
 
     <!-- linking css; the rel in the syntax indicates a linking of the css while href references the location of the -->
     <link rel="stylesheet" href="assets/css/Reset.css">
+     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/css/style.css">
+   
     <!-- <style> 
         body {
     background-image: url("F_Professional.jpg");
@@ -20,7 +22,7 @@
 <body>
     <!-- creating the NavBar -->
 
-    <nav>
+    <nav class="fixed left-0 right-0">
         <h4 class="text_white">EF.Larko</h4>
         <div class="nav_items">
             <a class="text_white" href="#">Home</a>
@@ -36,13 +38,13 @@
     <!-- the hero goes here -->
     <section class="hero">
         <!-- <div id="hero"> -->
-        <div  class="hero_info">
+        <div class="w-[50%] pl-[10%]">
             <p>Hi There!</p>
             <H1 class="tittle text_white">I am Efua Larko</H1>
             <H1 class="tittle text_white">Web Developer</H1>
             <p class="sub_tittle text_white">I am ethusiatic about web development</p>
-            <button>HIRE ME</button>
-            <button>VIEW PORTFOLIO</button>
+            <button class="bg-[#0779E4] py-16px px-24px w-[125px] h-[53px] text-white font-bold rounded-lg">HIRE ME</button>
+            <button class="bg-white py-16px px-24px w-[200px] h-[53px] text-sky-500 font-bold rounded-lg ml-2">VIEW PORTFOLIO</button>
 
             <!-- <img src="F_Professional.jpg" alt="Pseudo_Image" style="width:1000px;height:600px;"> -->
         </div>
