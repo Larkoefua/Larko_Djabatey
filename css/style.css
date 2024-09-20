@@ -1,0 +1,548 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    /* overflow-y: hidden;
+    overflow-x: hidden; */
+}
+
+
+nav {
+    background-color: rgba(0, 0, 0, 0.315);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 98%;
+
+    margin: auto;
+}
+
+
+.list {
+    list-style-type: none;
+    color: white;
+}
+
+#nav_items a:hover {
+
+    color: black;
+}
+
+#nav_items {
+    display: flex;
+    gap: 20px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-family: "Roboto Slab", serif;
+}
+
+nav h1 {
+    font-size: 20px;
+    /* font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    text-align: center;
+    padding-right: 2rem;
+    /* padding-top: rem; */
+    font-family: "Roboto Slab", serif;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+}
+
+/* .logo h1 {
+    padding-right: 2rem;
+    padding-top: .9rem;
+    font-family: "Roboto Slab", serif;
+} */
+
+nav img {
+    width: 30px;
+    height: 30px;
+    /* padding-right: 100rem;  */
+}
+
+.background {
+    background-image: url(../images/mountain-dusk.png) ;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* padding: 20px; */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+}
+
+.background h1 {
+    font-size: 60px;
+    margin-top: 15rem;
+    margin-bottom: 0.9em;
+    font-family: "Roboto Slab", serif;
+    animation: slideIn 1s ease-out forwards;
+}
+
+.background p {
+    font-size: 25px;
+    font-family: "Roboto Slab", serif;
+    margin-bottom: auto;
+    animation: slideIn 1s ease-out forwards 0.5s;
+}
+
+.scroll-icon {
+    font-size: 3rem;
+    margin-bottom: .5rem;
+    color: white;
+    animation: slideIn 1s ease-out forwards 1s;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        /* Start position */
+        opacity: 0;
+        /* Start invisible */
+    }
+
+    to {
+        transform: translateY(0);
+        /* End position */
+        opacity: 1;
+        /* End visible */
+    }
+}
+
+.about_section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 60px;
+    padding-bottom: 2rem;
+}
+
+.about_section img {
+
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.about_section h5 {
+    color: #000000cc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 26px;
+}
+
+.about_section p {
+    font-family: "Roboto Slab", serif;
+    font-size: 20px;
+    text-align: center;
+    color: #000000cc;
+    max-width: 48%;
+
+}
+
+.icons {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    /* grid-row-gap: 0px; */
+
+}
+
+.icons h4 {
+    font-family: "Roboto Slab", serif;
+    font-size: 20px;
+    color: #000000cc;
+}
+
+.icons p {
+    font-family: "Roboto Slab", serif;
+    font-size: 20px;
+    color: #000000cc;
+}
+
+.fav {
+    padding-bottom: 6rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.fav h3 {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    color: #000000cc;
+    padding-top: 5rem;
+
+}
+
+
+.fa {
+    /* font-size:10px;  */
+    /* border-radius:100%;  */
+    width: 180px;
+    height: 100px;
+    line-height: 175px;
+    max-width: 100%;
+    border-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    /* color: #FFF; */
+    font-size: 55px;
+    text-align: center;
+    padding-top: 5rem;
+    vertical-align: middle;
+    position: relative;
+    margin: 0 auto 40px;
+    /* background-color: blue; 
+    color: white; " */
+}
+
+.techy_text h3 {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    color: #000000cc;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.techy_text p {
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    font-size: 30px;
+    color: #000000cc;
+    padding-left: 12rem;
+    padding-bottom: 2rem;
+    max-width: 70%;
+}
+
+.Techy h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: #000000cc;
+    padding-top: 5rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.techy {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /* grid-column-gap: 10px; */
+    grid-row-gap: 10px;
+    padding-left: 13rem;
+}
+
+.techy img {
+    width: 30%;
+    /* height: px;  */
+    object-fit: cover;
+    object-position: center;
+}
+
+.background_attachment {
+    background-image: url(../images/bg.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0);
+
+    object-fit: cover;
+    height: 60vh;
+
+    text-align: center;
+    /* filter: blur(1px); */
+}
+
+.background_attachment h1 {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    color: white;
+    padding-top: 8rem;
+    text-align: center;
+    padding-bottom: 2rem;
+
+}
+
+.background_attachment button {
+
+    background-color: rgba(0, 0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: white;
+    width: fit-content;
+    border-color: burlywood;
+    box-shadow: none;
+
+}
+
+.background_attachment button:hover {
+
+    background-color: rgba(128, 128, 128, 0.61);
+    border-radius: 5%;
+
+
+}
+
+.Project {
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.Project h1 {
+    padding-bottom: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+}
+
+.Project p {
+    padding-bottom: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.done {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    /* grid-column-gap: 1px; */
+    /* grid-row-gap: 0px; */
+    text-align: center;
+}
+
+.done h1 {
+
+    padding-top: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+
+}
+
+.done p {
+
+    padding-top: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding-bottom: 1rem;
+
+}
+
+.done img {
+
+    width: 20rem;
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 20%;
+    box-shadow: 50rem;
+}
+
+.done button {
+
+    background-color: rgba(0, 0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    /* color: white; */
+    width: fit-content;
+    border-radius: 10%;
+    border-color: rgb(8, 8, 8);
+
+    margin-bottom: 5rem;
+
+}
+
+.done button:hover {
+
+    background-color: rgba(0, 0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    /* color: white; */
+    width: fit-content;
+    border-radius: 10%;
+    border-color: rgb(8, 8, 8);
+    background-color: rgba(222, 184, 135, 0.514);
+    margin-bottom: 5rem;
+
+}
+
+.intouch {
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.438);
+}
+
+
+/* 
+.Intouch{
+    padding-bottom: 20rem;
+} */
+
+.Intouch h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+
+}
+
+.Intouch p {
+
+    font-family: "Roboto Slab", serif;
+    font-size: 30px;
+    padding-bottom: 2rem;
+}
+
+.Intouch button {
+    background-color: rgba(0, 0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    /* color: white; */
+    width: fit-content;
+    /* border-radius: 10%; */
+    border-color: rgb(8, 8, 8);
+    margin-bottom: 5rem;
+}
+
+.Intouch button:hover {
+
+   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    /* color: white; */
+    width: fit-content;
+    /* border-radius: 10%; */
+    border-color: rgb(8, 8, 8);
+    background-color: rgba(0, 0, 255, 0.486);
+    margin-bottom: 5rem;
+
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+font-size: larger;
+color: white;
+
+    
+}
+
+
+
+
+.facebook{
+
+    font-size: 2rem;
+    /* margin-bottom: .5rem; */
+    color: white;
+   
+}
+
+.facebook:hover{
+
+    font-size: 2rem;
+    /* margin-bottom: .5rem; */
+    color: rgba(0, 0, 255, 0.733);
+   
+}
+
+.twitter{
+    font-size: 2rem;
+    /* margin-bottom: .5rem; */
+    color: white;
+   
+}
+.twitter:hover{
+    font-size: 2rem;
+    /* margin-bottom: .5rem; */
+    color: rgb(69, 148, 223) ;
+   
+}
+.instagram{
+    font-size: 2rem;
+    /* margin-bottom: .5rem; */
+    color: white;
+   
+}
+
+.instagram:hover{
+    font-size: 2rem;
+    /* margin-bottom: .5rem; */
+    color:  rgba(36, 113, 228, 0.548);
+   
+}
+
+
+.github{
+    font-size: 2rem;
+    /* margin-bottom: .5rem; */
+    color: white;
+    
+}
+
+.github:hover{
+    font-size: 2rem;
+    /* margin-bottom: .5rem; */
+    color: rgba(36, 113, 228, 0.548);
+    
+}
+
+
+.linkedin{
+    font-size: 2rem;
+    /* margin-bottom: .5rem; */
+    color: white;
+    /* display: inline-block; */
+  
+    
+}
+
+.linkedin:hover{
+    font-size: 2rem;
+    /* margin-bottom: .5rem; */
+    color: rgba(36, 113, 228, 0.548);
+    /* display: inline-block; */
+
+}
+ .copyright{
+    font-family: "Roboto Slab", serif;
+    font-size:19px;
+    text-align: center;
+    color:rgba(128, 128, 128, 0.438);
+   
+   
+} 
+footer{
+    background-color: rgba(0, 0, 0, 0.87);
+}
