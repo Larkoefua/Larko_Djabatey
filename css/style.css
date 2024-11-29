@@ -2,8 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: 0;
-    /* overflow-y: hidden;
-    overflow-x: hidden; */
+    /* overflow-y: hidden; */
+    overflow-x: hidden;
 }
 
 
@@ -15,9 +15,10 @@ nav {
     padding: 15px;
     position: fixed;
     top: 0;
+    left: 0; 
     width: 98%;
-
     margin: auto;
+    z-index: 1000;
 }
 
 
@@ -253,20 +254,32 @@ nav img {
     padding-bottom: 2rem;
 }
 
-.techy {
+/* .techy {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    /* grid-column-gap: 10px; */
     grid-row-gap: 10px;
     padding-left: 13rem;
+} */
+
+.techy {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    place-items: center;  /* This centers items both horizontally and vertically */
 }
 
-.techy img {
+
+/* .techy img {
     width: 30%;
-    /* height: px;  */
     object-fit: cover;
     object-position: center;
+} */
+.techy img {
+    width: 100px;  /* Set a consistent width for all images */
+    height: 100px; /* Set a consistent height for all images */
+    object-fit: contain; /* This ensures images maintain their aspect ratio */
 }
 
 .background_attachment {
@@ -547,10 +560,10 @@ footer{
     background-color: rgba(0, 0, 0, 0.87);
 }
 
-@media screen and (max-width: 1024px) {
+ @media screen and /*(max-width: 1024px)*/ (max-width: 768px){ 
     .techy {
-      grid-template-columns: repeat(2, 1fr);
-      padding-left: 5rem;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
     }
   
     .done {
@@ -568,7 +581,7 @@ footer{
     }
   }
   
-  @media screen and (max-width: 768px) {
+  @media screen and /*(max-width: 768px)*/ (max-width: 480px) {
     nav {
       flex-direction: column;
       padding: 10px;
@@ -599,10 +612,15 @@ footer{
         height: 40vh;
       }
     
-      .techy {
+      /* .techy {
         grid-template-columns: 1fr;
         padding-left: 0;
         justify-items: center;
+    } */
+
+    .techy {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 }
 
