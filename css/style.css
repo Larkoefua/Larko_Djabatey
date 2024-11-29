@@ -546,3 +546,89 @@ color: white;
 footer{
     background-color: rgba(0, 0, 0, 0.87);
 }
+
+@media screen and (max-width: 1024px) {
+    .techy {
+      grid-template-columns: repeat(2, 1fr);
+      padding-left: 5rem;
+    }
+  
+    .done {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+  
+    .about_section p {
+      max-width: 80%;
+    }
+  
+    .techy_text p {
+      padding-left: 5rem;
+      max-width: 85%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      padding: 10px;
+    }
+    #nav_items {
+        margin-top: 1rem;
+      }
+    
+      .background h1 {
+        font-size: 40px;
+      }
+    
+      .background p {
+        font-size: 20px;
+      }
+    
+      .icons {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    
+      .done {
+        grid-template-columns: 1fr;
+      }
+    
+      .done img {
+        width: 80%;
+        height: 40vh;
+      }
+    
+      .techy {
+        grid-template-columns: 1fr;
+        padding-left: 0;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+  #nav_items {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .background h1 {
+    font-size: 30px;
+  }
+
+  .about_section p {
+    max-width: 90%;
+  }
+
+  .techy_text p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 20px;
+  }
+
+  .done img {
+    width: 90%;
+    height: 30vh;
+  }
+}
