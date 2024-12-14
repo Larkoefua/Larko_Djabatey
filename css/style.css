@@ -4,7 +4,6 @@
     box-sizing: 0;
     /* overflow-y: hidden; */
     overflow-x: hidden;
- 
 }
 
 html {
@@ -21,7 +20,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0; 
-    width: 98%;
+    width: 100%;
     margin: auto;
     z-index: 1000;
 }
@@ -39,8 +38,8 @@ nav {
 
 #nav_items {
     display: flex;
-    gap: 20px;
-
+    gap: 2rem;
+    list-style: none;
 }
 
 nav a {
@@ -83,7 +82,7 @@ nav img {
 
 .hamburger {
     display: none;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .bar {
@@ -660,22 +659,26 @@ footer{
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 33px;
+        top: 100px;
         gap: 0;
         flex-direction: column;
         background-color: rgba(128, 128, 128, 0.664);
-        width: 91%;
+        width: 100%;
         text-align: left;
         transition: 0.3s;
         padding-left: 2rem;
     }
 
-    #nav_items {
-        margin-top: 1rem;
-    }
     .nav-menu.active {
         left: 0;
     }
+
+    #nav_items {
+        /* margin-top: 1rem; */
+        flex-direction: column;
+        gap: 1rem;
+    }
+   
 
     #nav_items li {
         margin: 16px 0;
